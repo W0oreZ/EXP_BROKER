@@ -1,0 +1,17 @@
+{
+  "name": "exp_broker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "broker.js",
+  "bin": "broker.js", 
+  "scripts": {
+    "start": "nodemon broker"
+  },
+  "keywords": [],
+  "author": "Abderrazak ELKHADIRI",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^5.6.8",
+    "mosca": "^2.8.3"
+  }
+}

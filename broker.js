@@ -43,8 +43,9 @@ server.on('clientConnected', function (client) {
 server.on('published', function (packet, client) {
 	const {topic, payload} = packet;
 	const message = payload.toString();
-	//const contex = message.toString();
+	const contex = message.toString();
 	//console.log(client);
+	
 	Channel.findOne({topic},(err,channel)=>{
 		if(!err && channel )
 		{
@@ -81,7 +82,7 @@ server.on('subscribed', function (topic, client) {
 });
 
 server.on('unsubscribed', function (topic, client) {
-	//console.log('unsubscribed := ', topic);
+	console.log('unsubscribed := ', topic);
 });
 
 server.on('clientDisconnecting', function (client) {

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "broker.js",
-  "bin": "broker.js", 
+  "bin": "broker.js",
   "scripts": {
     "start": "nodemon broker"
   },

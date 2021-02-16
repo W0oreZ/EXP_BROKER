@@ -44,7 +44,7 @@ server.on('published', function (packet, client) {
 	const {topic, payload} = packet;
 	const message = payload.toString();
 	const contex = message.toString();
-	//console.log(client);
+
 	
 	Channel.findOne({topic},(err,channel)=>{
 		if(!err && channel )
